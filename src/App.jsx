@@ -114,7 +114,7 @@ export default function App() {
       <div className="mt-6 text-white text-xl">
         <p>Time: {timer} seconds</p>
         {isFinished && <p>Your typing time: {timer} seconds</p>}
-        {isFinished && <p> Number of worlds per minutes {NmbPerMunites} </p>}
+        {isFinished && <p> Number of words per minutes {NmbPerMunites} </p>}
       </div>
     </div>
   );
