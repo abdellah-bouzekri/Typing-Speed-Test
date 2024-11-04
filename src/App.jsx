@@ -59,7 +59,7 @@ export default function App() {
       }
     }
   };
-  // calculating number of words per munites
+  // calculating number of words per minutes
   function calculateWordsPerMinute() {
     if (timer > 0) {
       const wordsPerMinute = (currentWordIndex / timer) * 60;
@@ -112,7 +112,7 @@ export default function App() {
       </div>
 
       <div className="mt-6 text-white text-xl">
-        {/* <p>Time: {timer} seconds</p> */}
+        <p>Time: {timer} seconds</p>
         {isFinished && <p>Your typing time: {timer} seconds</p>}
         {isFinished && <p> Number of worlds per minutes {NmbPerMunites} </p>}
       </div>
