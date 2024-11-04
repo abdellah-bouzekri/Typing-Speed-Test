@@ -46,7 +46,10 @@ export default function App() {
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
-    if (e.target.value.trim() === words[currentWordIndex]) {
+    if (
+      e.target.value.trim().toLowerCase() ===
+      words[currentWordIndex].toLowerCase()
+    ) {
       setCurrentWordIndex((prev) => prev + 1);
       setInput("");
       if (currentWordIndex === words.length - 1) {
