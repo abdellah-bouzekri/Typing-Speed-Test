@@ -63,7 +63,7 @@ export default function App() {
   function calculateWordsPerMinute() {
     if (timer > 0) {
       const wordsPerMinute = (currentWordIndex / timer) * 60;
-      setNmbPerMunites(wordsPerMinute);
+      setNmbPerMunites(wordsPerMinute.toFixed(1));
     }
   }
 
